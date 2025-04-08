@@ -1,0 +1,22 @@
+var sema = new Array();
+sema[0] = 'um Domingo';
+sema[1] = 'uma Segunda-feira';
+sema[2] = 'uma Terça-feira';
+sema[3] = 'uma Quarta-feira';
+sema[4] = 'uma Quinta-feira';
+sema[5] = 'uma Sexta-feira';
+sema[6] = 'um Sábado';
+
+var mes_ext = new Array();
+mes_ext[0] = 'Janeiro';
+mes_ext[1] = 'Fevereiro';
+mes_ext[2] = 'Março';
+mes_ext[3] = 'Abril';
+mes_ext[4] = 'Maio';
+mes_ext[5] = 'Junho';
+mes_ext[6] = 'Julho';
+mes_ext[7] = 'agosto';
+mes_ext[8] = 'Setembro';
+mes_ext[9] = 'Outubro';
+mes_ext[10] = 'Novembro';
+mes_ext[11] = 'Dezembro';
