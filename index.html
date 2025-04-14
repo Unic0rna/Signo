@@ -11,31 +11,43 @@
     <form>
         <h1>Signo</h1>
         <label>Informe o dia que nasceu:</label>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="dia">
         <br>
 
         <label>Informe o mês que nasceu:</label>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="mes">
         <br>
 
         <label>Informe o ano em que nasceu:</label>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="ano">
         <br>
 
         <label>Seu mês de nascimento é:</label>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="mext" disabled>
         <br>
 
         <label>O dia da semana foi</label>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="sema" disabled>
         <br>
 
         <img src="">
 
         <label>A sua idade é</label>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="idade" disabled>
+
+        <br>
+
+        <div id="botoes">
+            <input type="button" id="btn1" onclick="Exibir()" value="Exibir">
+            <input type="button" id="btn2" onclick="Limpar()" value="Limpar">
+        </div>
     </form>
 
+    <img src="./assets/src/aqua.png" id="Signo" class="signo1">
+    <img src="./assets/src/aqua.png" id="Signo2" class="signo2">
+
+    <div id="fundo1"></div>
+    <div id="fundo2"></div>
     <script language="JavaScript" src="./assets/javascript/script.js"></script>   
 </body>
 </html>
