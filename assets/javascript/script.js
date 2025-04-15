@@ -27,12 +27,12 @@ function Exibir() {
     var a_ani = document.getElementById('ano').value;
 
     if (isNaN(d_ani)) {
-        window.alert('Dígito inválido, digite números');
+        alert('Dígito inválido, digite números');
 
     }
 
     else if (d_ani == '') {
-        window.alert('O dia não pode ficar vazio')
+        alert('O dia não pode ficar vazio')
     }
 
     else {
@@ -40,39 +40,38 @@ function Exibir() {
 
         if ((d_ani < 1) || (d_ani > 31)) {
 
-            window.alert('o dia deve ser entre 1 e 31');
+            alert('o dia deve ser entre 1 e 31');
         }
 
     }
 
     if (isNaN(m_ani)) {
-        window.alert('Dígito inválido, digite números');
-
+        alert('Dígito inválido, digite números');
     }
 
     else if (m_ani == '') {
-        window.alert('O mês não pode ficar vazio')
+        alert('O mês não pode ficar vazio');
     }
 
     else {
-        d_ani = parseInt(m_ani)
+        d_ani = parseInt(m_ani);
 
         if ((m_ani < 1) || (m_ani > 12)) {
 
-            window.alert('o mês deve ser entre 1 e 12');
+            alert('o mês deve ser entre 1 e 12');
         }
     }
 
     if (isNaN(a_ani)) {
-        window.alert('Dígito inválido, digite números');
+        alert('Dígito inválido, digite números');
 
     }
 
     else if (a_ani == '') {
-        window.alert('O dia não pode ficar vazio')
+        alert('O ano não pode ficar vazio');
     }
     else if (a_ani.length != 4) {
-        alert('O ano deve conter 4 digitos')
+        alert('O ano deve conter 4 digitos');
     }
 
     else {
@@ -142,7 +141,7 @@ function Exibir() {
             document.getElementById('Signo').src = "./assets/src/gemeos.png";
             document.getElementById('Signo2').src = "./assets/src/gemeos.png";
             document.getElementById('Signo').style.opacity = 1;
-            document.getElementById('Signo').style.opacity = 1;
+            document.getElementById('Signo2').style.opacity = 1;
         }
 
         else if (((d_ani >= 21) && (m_ani == 6)) || ((d_ani <= 22) && (m_ani == 7)))
@@ -213,6 +212,7 @@ function Limpar()
     document.getElementById('sema').value = '';
     document.getElementById('mext').value = '';
     document.getElementById('Signo').src = '';
+    document.getElementById('Signo2').src = '';
     document.getElementById('dia').value = '';
     document.getElementById('mes').value = '';
     document.getElementById('ano').value = '';

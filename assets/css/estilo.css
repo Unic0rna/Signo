@@ -4,79 +4,115 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: fonte;
+    src: url(../src/LEMONMILK-Regular.otf);
+}
+
 body
 {
     background-color: #230d4d;
+    background-image: url(../src/fundo.png);
+    font-family: fonte;
 }
 
 form
 {
     text-align: center;
     background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.342), rgba(255, 255, 255, 0.76));
-    border: 1px solid transparent;
+    border: 2px solid white;
     border-radius: 20px;
     width: 70%;
-    margin-top: 200px;
+    margin-top: 130px;
     margin-left: 15%;
     padding: 30px;
+    box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.705);
+    transition: all 1s;
+}
+
+form:hover
+{
+    transform: scale(0.9);
 }
 
 h1
 {
     font-size: 50px;
     margin-bottom: 20px;
+    cursor: default;
+    color: #230d4d;
 }
 
 label,input
 {
-    font-size: 30px;
+    font-size: clamp(20px, 2vw, 40px);
 }
 
 input
 {
     margin-bottom: 20px;
-    width: 270px;
+    width: 40%;
+    text-align: center;
+    background-color: #bc98ff;
+    border: 3px solid#230d4d;
+    border-radius: 50px;
+    color: black;
+    margin-left: 2%;
+    font-family: fonte;
+}
+
+#sema
+{
+    width: auto;
 }
 
 #botoes
 {
     display: inline-flex;
-    width: 20%;
-   gap: 10px;
+
+   gap: 5%;
    margin-top: 20px;
 }
 
-#fundo1
+#gala1
 {
-    
-    background: radial-gradient(rgb(0, 29, 156) 20%,#230d4d 70%);
-    width: 500px;
-    height: 500px;
-    top: -100px;
-}
-
-#fundo2
-{
-    background: radial-gradient(rgb(3, 39, 202) 20%,#230d4d 70%);
-    width: 700px;
-    height: 700px;
+    width: 40%;
+    height: auto;
     bottom: 0px;
     right: 0px;
 }
 
-#fundo2, #fundo1
+#gala2
+{
+    width: 50%;
+    height: auto;
+    top: -100px;
+    left: -100px;
+}
+
+#gala2, #gala1
 {
     position: absolute;
     z-index: -10;
 }
 
-img
+[id*="Signo"]
 {
     opacity: 0;
     width: 20%;
     height: auto;
     position: absolute;
     transition: all 0.5s;
+}
+
+#Signo:hover
+{
+    transform: rotateY(360deg);
+}
+
+#Signo2:hover
+{
+    transform: rotateY(150deg);
 }
 
 .signo1
@@ -96,6 +132,7 @@ img
 {
     background-color: #230d4d;
     color: white;
+    width: 100%;
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -105,6 +142,19 @@ img
 
 [id*="btn"]:hover
 {
-    transition: all 0.3s;
-    background-color: rgb(0, 29, 156);
+    transition: all 0.7s;
+    letter-spacing: 5px;
+    transform: scale(1.1);
+}
+
+#btn1:hover
+{
+    background-color: #001d9c;
+    box-shadow: 0px 0px 15px 5px #001d9cc0;
+}
+
+#btn2:hover
+{
+    background-color: red;
+    box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.699);
 }
